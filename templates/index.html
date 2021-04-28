@@ -5,6 +5,11 @@
     <title></title>
 </head>
 <body>
+    <form action="/" method="post">
+        <label for="title">Teendő</label>
+        <input type="text" name="title" id="title" />
+        <button type="submit">Küldés</button>
+    </form>
     <ul>
         {% for todo in todos %}
         <li>{{ todo.title }}</li>
